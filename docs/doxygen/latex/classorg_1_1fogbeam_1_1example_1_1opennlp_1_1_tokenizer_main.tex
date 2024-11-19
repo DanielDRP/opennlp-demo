@@ -3,9 +3,96 @@
 \doxysubsubsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{classorg_1_1fogbeam_1_1example_1_1opennlp_1_1_tokenizer_main_a957e2ce0b42d88a63fe225dd240d5e95}\label{classorg_1_1fogbeam_1_1example_1_1opennlp_1_1_tokenizer_main_a957e2ce0b42d88a63fe225dd240d5e95} 
-static void {\bfseries main} (String\mbox{[}$\,$\mbox{]} args)  throws Exception  
+static void \mbox{\hyperlink{classorg_1_1fogbeam_1_1example_1_1opennlp_1_1_tokenizer_main_a957e2ce0b42d88a63fe225dd240d5e95}{main}} (String\mbox{[}$\,$\mbox{]} args)  throws IOException 
+\item 
+static void \mbox{\hyperlink{classorg_1_1fogbeam_1_1example_1_1opennlp_1_1_tokenizer_main_a037e9f74cd6548feaa4fedd235e7eb65}{interactive\+Menu}} ()  throws IOException 
+\item 
+static List$<$ String $>$ \mbox{\hyperlink{classorg_1_1fogbeam_1_1example_1_1opennlp_1_1_tokenizer_main_afefe43f75e19ef9925589510eedcf39f}{tokenize}} (File file)  throws IOException 
+\item 
+static List$<$ String $>$ \mbox{\hyperlink{classorg_1_1fogbeam_1_1example_1_1opennlp_1_1_tokenizer_main_a48eaea6c49494f347d87740c6eda14a3}{tokenize\+File}} (File input\+File)  throws IOException 
 \end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classorg_1_1fogbeam_1_1example_1_1opennlp_1_1_tokenizer_main_a037e9f74cd6548feaa4fedd235e7eb65}\index{org.fogbeam.example.opennlp.TokenizerMain@{org.fogbeam.example.opennlp.TokenizerMain}!interactiveMenu@{interactiveMenu}}
+\index{interactiveMenu@{interactiveMenu}!org.fogbeam.example.opennlp.TokenizerMain@{org.fogbeam.example.opennlp.TokenizerMain}}
+\doxysubsubsection{\texorpdfstring{interactiveMenu()}{interactiveMenu()}}
+{\footnotesize\ttfamily \label{classorg_1_1fogbeam_1_1example_1_1opennlp_1_1_tokenizer_main_a037e9f74cd6548feaa4fedd235e7eb65} 
+static void org.\+fogbeam.\+example.\+opennlp.\+Tokenizer\+Main.\+interactive\+Menu (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) throws IOException\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Interactive menu for tokenizing files.
+
+This method allows the user to tokenize files interactively, add tokens from multiple files, and optionally save the tokens to an output file.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em IOException} & If an error occurs while reading files or writing output. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classorg_1_1fogbeam_1_1example_1_1opennlp_1_1_tokenizer_main_a957e2ce0b42d88a63fe225dd240d5e95}\index{org.fogbeam.example.opennlp.TokenizerMain@{org.fogbeam.example.opennlp.TokenizerMain}!main@{main}}
+\index{main@{main}!org.fogbeam.example.opennlp.TokenizerMain@{org.fogbeam.example.opennlp.TokenizerMain}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily \label{classorg_1_1fogbeam_1_1example_1_1opennlp_1_1_tokenizer_main_a957e2ce0b42d88a63fe225dd240d5e95} 
+static void org.\+fogbeam.\+example.\+opennlp.\+Tokenizer\+Main.\+main (\begin{DoxyParamCaption}\item[{String\mbox{[}$\,$\mbox{]}}]{args}{}\end{DoxyParamCaption}) throws IOException\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Main entry point for the application.
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & Command-\/line arguments. If no arguments are provided, the program starts in interactive mode. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em IOException} & If an error occurs while reading files or tokenizing text. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classorg_1_1fogbeam_1_1example_1_1opennlp_1_1_tokenizer_main_afefe43f75e19ef9925589510eedcf39f}\index{org.fogbeam.example.opennlp.TokenizerMain@{org.fogbeam.example.opennlp.TokenizerMain}!tokenize@{tokenize}}
+\index{tokenize@{tokenize}!org.fogbeam.example.opennlp.TokenizerMain@{org.fogbeam.example.opennlp.TokenizerMain}}
+\doxysubsubsection{\texorpdfstring{tokenize()}{tokenize()}}
+{\footnotesize\ttfamily \label{classorg_1_1fogbeam_1_1example_1_1opennlp_1_1_tokenizer_main_afefe43f75e19ef9925589510eedcf39f} 
+static List$<$ String $>$ org.\+fogbeam.\+example.\+opennlp.\+Tokenizer\+Main.\+tokenize (\begin{DoxyParamCaption}\item[{File}]{file}{}\end{DoxyParamCaption}) throws IOException\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Tokenizes a file or all files within a directory.
+
+If the input is a directory, all files within the directory are processed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em file} & The file or directory to tokenize. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A list of tokens extracted from the file(s). 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em IOException} & If an error occurs while reading files or tokenizing text. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classorg_1_1fogbeam_1_1example_1_1opennlp_1_1_tokenizer_main_a48eaea6c49494f347d87740c6eda14a3}\index{org.fogbeam.example.opennlp.TokenizerMain@{org.fogbeam.example.opennlp.TokenizerMain}!tokenizeFile@{tokenizeFile}}
+\index{tokenizeFile@{tokenizeFile}!org.fogbeam.example.opennlp.TokenizerMain@{org.fogbeam.example.opennlp.TokenizerMain}}
+\doxysubsubsection{\texorpdfstring{tokenizeFile()}{tokenizeFile()}}
+{\footnotesize\ttfamily \label{classorg_1_1fogbeam_1_1example_1_1opennlp_1_1_tokenizer_main_a48eaea6c49494f347d87740c6eda14a3} 
+static List$<$ String $>$ org.\+fogbeam.\+example.\+opennlp.\+Tokenizer\+Main.\+tokenize\+File (\begin{DoxyParamCaption}\item[{File}]{input\+File}{}\end{DoxyParamCaption}) throws IOException\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Tokenizes the content of a single file.
+
+Reads the content of the file, tokenizes it using Open\+NLP, and returns a list of tokens.
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\+File} & The file to tokenize. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A list of tokens extracted from the file. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em IOException} & If an error occurs while reading the file or tokenizing its content. \\
+\hline
+\end{DoxyExceptions}
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

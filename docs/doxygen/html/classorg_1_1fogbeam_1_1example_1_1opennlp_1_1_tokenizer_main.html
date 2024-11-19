@@ -97,10 +97,167 @@ $(function(){ initResizable(false); });
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a957e2ce0b42d88a63fe225dd240d5e95" id="r_a957e2ce0b42d88a63fe225dd240d5e95"><td class="memItemLeft" align="right" valign="top"><a id="a957e2ce0b42d88a63fe225dd240d5e95" name="a957e2ce0b42d88a63fe225dd240d5e95"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>main</b> (String[] args)  throws Exception 	</td></tr>
+<tr class="memitem:a957e2ce0b42d88a63fe225dd240d5e95" id="r_a957e2ce0b42d88a63fe225dd240d5e95"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a957e2ce0b42d88a63fe225dd240d5e95">main</a> (String[] args)  throws IOException </td></tr>
 <tr class="separator:a957e2ce0b42d88a63fe225dd240d5e95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a037e9f74cd6548feaa4fedd235e7eb65" id="r_a037e9f74cd6548feaa4fedd235e7eb65"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a037e9f74cd6548feaa4fedd235e7eb65">interactiveMenu</a> ()  throws IOException </td></tr>
+<tr class="separator:a037e9f74cd6548feaa4fedd235e7eb65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afefe43f75e19ef9925589510eedcf39f" id="r_afefe43f75e19ef9925589510eedcf39f"><td class="memItemLeft" align="right" valign="top">static List&lt; String &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afefe43f75e19ef9925589510eedcf39f">tokenize</a> (File file)  throws IOException </td></tr>
+<tr class="separator:afefe43f75e19ef9925589510eedcf39f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48eaea6c49494f347d87740c6eda14a3" id="r_a48eaea6c49494f347d87740c6eda14a3"><td class="memItemLeft" align="right" valign="top">static List&lt; String &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a48eaea6c49494f347d87740c6eda14a3">tokenizeFile</a> (File inputFile)  throws IOException </td></tr>
+<tr class="separator:a48eaea6c49494f347d87740c6eda14a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a037e9f74cd6548feaa4fedd235e7eb65" name="a037e9f74cd6548feaa4fedd235e7eb65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a037e9f74cd6548feaa4fedd235e7eb65">&#9670;&#160;</a></span>interactiveMenu()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void org.fogbeam.example.opennlp.TokenizerMain.interactiveMenu </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> throws IOException</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Interactive menu for tokenizing files.</p>
+<p>This method allows the user to tokenize files interactively, add tokens from multiple files, and optionally save the tokens to an output file.</p>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">IOException</td><td>If an error occurs while reading files or writing output. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a957e2ce0b42d88a63fe225dd240d5e95" name="a957e2ce0b42d88a63fe225dd240d5e95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a957e2ce0b42d88a63fe225dd240d5e95">&#9670;&#160;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void org.fogbeam.example.opennlp.TokenizerMain.main </td>
+          <td>(</td>
+          <td class="paramtype">String[]</td>          <td class="paramname"><span class="paramname"><em>args</em></span></td><td>)</td>
+          <td> throws IOException</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Main entry point for the application.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">args</td><td>Command-line arguments. If no arguments are provided, the program starts in interactive mode. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">IOException</td><td>If an error occurs while reading files or tokenizing text. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="afefe43f75e19ef9925589510eedcf39f" name="afefe43f75e19ef9925589510eedcf39f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afefe43f75e19ef9925589510eedcf39f">&#9670;&#160;</a></span>tokenize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static List&lt; String &gt; org.fogbeam.example.opennlp.TokenizerMain.tokenize </td>
+          <td>(</td>
+          <td class="paramtype">File</td>          <td class="paramname"><span class="paramname"><em>file</em></span></td><td>)</td>
+          <td> throws IOException</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Tokenizes a file or all files within a directory.</p>
+<p>If the input is a directory, all files within the directory are processed.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">file</td><td>The file or directory to tokenize. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A list of tokens extracted from the file(s). </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">IOException</td><td>If an error occurs while reading files or tokenizing text. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a48eaea6c49494f347d87740c6eda14a3" name="a48eaea6c49494f347d87740c6eda14a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48eaea6c49494f347d87740c6eda14a3">&#9670;&#160;</a></span>tokenizeFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static List&lt; String &gt; org.fogbeam.example.opennlp.TokenizerMain.tokenizeFile </td>
+          <td>(</td>
+          <td class="paramtype">File</td>          <td class="paramname"><span class="paramname"><em>inputFile</em></span></td><td>)</td>
+          <td> throws IOException</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Tokenizes the content of a single file.</p>
+<p>Reads the content of the file, tokenizes it using OpenNLP, and returns a list of tokens.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">inputFile</td><td>The file to tokenize. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A list of tokens extracted from the file. </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">IOException</td><td>If an error occurs while reading the file or tokenizing its content. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>C:/Users/Dani/LDH/opennlp-demo/src/main/java/org/fogbeam/example/opennlp/<b>TokenizerMain.java</b></li>
 </ul>
