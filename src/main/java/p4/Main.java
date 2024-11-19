@@ -1,4 +1,4 @@
-package p5;
+package p4;
 
 import opennlp.tools.tokenize.Tokenizer;
 import opennlp.tools.tokenize.TokenizerME;
