@@ -1,0 +1,100 @@
+\doxysection{p5.\+Main Class Reference}
+\hypertarget{classp5_1_1_main}{}\label{classp5_1_1_main}\index{p5.Main@{p5.Main}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classp5_1_1_main_a9cebe0710af1323538816a6f91f93346}{main}} (String\mbox{[}$\,$\mbox{]} args)  throws IOException 
+\item 
+static void \mbox{\hyperlink{classp5_1_1_main_a0351d93b3bdf5a20f5a0f1d943d03dc1}{interactive\+Menu}} ()  throws IOException 
+\item 
+static List$<$ String $>$ \mbox{\hyperlink{classp5_1_1_main_a06675ca5520f12173c8a64a81a77f52a}{tokenize}} (File file)  throws IOException 
+\item 
+static List$<$ String $>$ \mbox{\hyperlink{classp5_1_1_main_a517eae7eeb6df83e0163a1f86d566c32}{tokenize\+File}} (File input\+File)  throws IOException 
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classp5_1_1_main_a0351d93b3bdf5a20f5a0f1d943d03dc1}\index{p5.Main@{p5.Main}!interactiveMenu@{interactiveMenu}}
+\index{interactiveMenu@{interactiveMenu}!p5.Main@{p5.Main}}
+\doxysubsubsection{\texorpdfstring{interactiveMenu()}{interactiveMenu()}}
+{\footnotesize\ttfamily \label{classp5_1_1_main_a0351d93b3bdf5a20f5a0f1d943d03dc1} 
+static void p5.\+Main.\+interactive\+Menu (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) throws IOException\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Interactive menu for tokenizing files.
+
+This method allows the user to tokenize files interactively, add tokens from multiple files, and optionally save the tokens to an output file.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em IOException} & If an error occurs while reading files or writing output. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classp5_1_1_main_a9cebe0710af1323538816a6f91f93346}\index{p5.Main@{p5.Main}!main@{main}}
+\index{main@{main}!p5.Main@{p5.Main}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily \label{classp5_1_1_main_a9cebe0710af1323538816a6f91f93346} 
+static void p5.\+Main.\+main (\begin{DoxyParamCaption}\item[{String\mbox{[}$\,$\mbox{]}}]{args}{}\end{DoxyParamCaption}) throws IOException\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\doxylink{classp5_1_1_main}{Main} entry point for the application.
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & Command-\/line arguments. If no arguments are provided, the program starts in interactive mode. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em IOException} & If an error occurs while reading files or tokenizing text. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classp5_1_1_main_a06675ca5520f12173c8a64a81a77f52a}\index{p5.Main@{p5.Main}!tokenize@{tokenize}}
+\index{tokenize@{tokenize}!p5.Main@{p5.Main}}
+\doxysubsubsection{\texorpdfstring{tokenize()}{tokenize()}}
+{\footnotesize\ttfamily \label{classp5_1_1_main_a06675ca5520f12173c8a64a81a77f52a} 
+static List$<$ String $>$ p5.\+Main.\+tokenize (\begin{DoxyParamCaption}\item[{File}]{file}{}\end{DoxyParamCaption}) throws IOException\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Tokenizes a file or all files within a directory.
+
+If the input is a directory, all files within the directory are processed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em file} & The file or directory to tokenize. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A list of tokens extracted from the file(s). 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em IOException} & If an error occurs while reading files or tokenizing text. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classp5_1_1_main_a517eae7eeb6df83e0163a1f86d566c32}\index{p5.Main@{p5.Main}!tokenizeFile@{tokenizeFile}}
+\index{tokenizeFile@{tokenizeFile}!p5.Main@{p5.Main}}
+\doxysubsubsection{\texorpdfstring{tokenizeFile()}{tokenizeFile()}}
+{\footnotesize\ttfamily \label{classp5_1_1_main_a517eae7eeb6df83e0163a1f86d566c32} 
+static List$<$ String $>$ p5.\+Main.\+tokenize\+File (\begin{DoxyParamCaption}\item[{File}]{input\+File}{}\end{DoxyParamCaption}) throws IOException\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Tokenizes the content of a single file.
+
+Reads the content of the file, tokenizes it using Open\+NLP, and returns a list of tokens.
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\+File} & The file to tokenize. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A list of tokens extracted from the file. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em IOException} & If an error occurs while reading the file or tokenizing its content. \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Dani/\+LDH/opennlp-\/demo/src/main/java/p5/\mbox{\hyperlink{_main_8java}{Main.\+java}}\end{DoxyCompactItemize}
