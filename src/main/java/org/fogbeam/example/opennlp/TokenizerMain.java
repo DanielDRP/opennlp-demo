@@ -14,6 +14,10 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+
 /**
  * @file Main.java
  * @brief Main class for tokenizing text files using OpenNLP.
@@ -23,6 +27,8 @@ import java.util.Scanner;
  * to tokenize single or multiple files.
  */
 public class TokenizerMain {
+
+    private static final Logger logger = LoggerFactory.getLogger(TokenizerMain.class);
 
     /**
      * Main entry point for the application.
@@ -124,7 +130,7 @@ public class TokenizerMain {
         try {
             modelIn.close();
         } catch (IOException e) {
-            e.printStackTrace();
+            logger.error("Error closing model input stream", e);
         }
 
         return Arrays.asList(tokens);
